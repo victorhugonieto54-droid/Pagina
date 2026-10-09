@@ -1,0 +1,82 @@
+/* ===================== LOGIN / REGISTRO (Bootstrap) ===================== */
+.auth-body {
+    min-height: 100vh;
+    background:
+        radial-gradient(ellipse 900px 500px at 15% -10%, rgba(46,200,212,0.18), transparent 60%),
+        radial-gradient(ellipse 700px 500px at 100% 10%, rgba(27,127,168,0.20), transparent 55%),
+        linear-gradient(180deg, var(--abyss) 0%, var(--deep) 100%);
+    background-attachment: fixed;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 380px;
+    background: linear-gradient(160deg, var(--panel), var(--deep));
+    border: 1px solid var(--line);
+    color: var(--text);
+}
+.auth-card .card-title { color: var(--foam); }
+.auth-card .fa-user-check { color: var(--foam); }
+
+.auth-card label {
+    color: var(--text-dim);
+    font-size: 12.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.auth-card .form-control {
+    background: rgba(4, 21, 33, 0.55);
+    border: 1px solid var(--line);
+    color: var(--text);
+}
+.auth-card .form-control:focus {
+    background: rgba(4, 21, 33, 0.7);
+    border-color: var(--tide);
+    color: var(--text);
+    box-shadow: 0 0 0 3px rgba(46,200,212,0.15);
+}
+.auth-card .form-control::placeholder { color: #3d6480; }
+
+.auth-card .input-group-text {
+    background: rgba(4, 21, 33, 0.7);
+    border: 1px solid var(--line);
+    color: var(--text-dim);
+}
+.auth-card .toggle-pass-btn {
+    border: 1px solid var(--line);
+    background: rgba(4, 21, 33, 0.7);
+    color: var(--text-dim);
+}
+.auth-card .toggle-pass-btn:hover { color: var(--foam); }
+
+.auth-card a { color: var(--tide); text-decoration: none; }
+.auth-card a:hover { text-decoration: underline; }
+
+/* ===================== BARRA DE USUARIO (index.php) ===================== */
+.topbar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13.5px;
+    color: var(--text-dim);
+}
+
+.btn-logout {
+    padding: 7px 14px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 12.5px;
+    transition: border-color 0.2s, color 0.2s;
+}
+.btn-logout:hover { border-color: var(--coral); color: var(--coral); }
